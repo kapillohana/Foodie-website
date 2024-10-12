@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div>
-      <section className="bg-[#F5FCFF] h-auto w-screen flex flex-col pt-28   md:pt-16 lg:pt-0 md:flex-row space-y-4 md:space-y-0 md:space-x-24 px-4 md:px-36 py-8 ">
+      <section className="bg-[#F5FCFF] h-auto w-full flex flex-col pt-52 sm:pt-24   md:pt-16 lg:pt-0 md:flex-row space-y-4 md:space-y-0 md:space-x-24 px-4 md:px-36 py-8 ">
         {/* Left Section - Logo, Text */}
         <div className="w-full flex flex-col items-center md:items-start md:w-1/4">
           <div className="bg-[#39DB4A] w-7 h-7 rounded-md flex items-center justify-center mb-2 mr-12 md-mr:0">
@@ -21,8 +21,8 @@ const Footer = () => {
             src="/images/oodi.png"
             alt="Logo"
             className="h-6 w-14 mb-4 -mt-8 ml-20 md:-mt-8 md:ml-7 mr-12"
-            width={56} // 14 * 4 = 56px
-            height={24} // 6 * 4 = 24px
+            width={56} 
+            height={24} 
           />
           <p className="text-center md:text-left text-sm text-gray-600">
             Savor the artistry where every dish is a culinary masterpiece.

@@ -46,6 +46,20 @@ const DishesSlider = () => {
       price: "$19.99",
       rating: 4.7,
     },
+    {
+      name: "Fruit Salad",
+      image: "/images/dish2.png",
+      description: "A refreshing mix of seasonal fruits.",
+      price: "$19.99",
+      rating: 4.7,
+    },
+    {
+      name: "Fruit Salad",
+      image: "/images/dish2.png",
+      description: "A refreshing mix of seasonal fruits.",
+      price: "$19.99",
+      rating: 4.7,
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -82,7 +96,7 @@ const DishesSlider = () => {
       {/* Dishes Cards */}
       <div className="flex justify-center overflow-hidden mt-10 h-80  ">
         <div
-          className="flex transition-transform duration-500 ease-in-out md:gap-3 lg:gap-6 gap-3"
+          className="flex transition-transform duration-500 ease-in-out sm:gap-2 md:gap-3 lg:gap-6 gap-2"
           style={{ transform: `translateX(-${currentIndex * (250 + 16)}px)` }} // 250px for width and 16px for gap between cards
         >
           {dishesData.map((dish, index) => (

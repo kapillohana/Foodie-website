@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-[#F5FCFF]">
-  <section className="bg-[#F5FCFF] h-screen w-screen flex flex-col md:flex-row px-6 md:px-36 pt-28 md:pt-16 ">
+  <section className="bg-[#F5FCFF] h-screen w-full flex flex-col md:flex-row px-6 md:px-32 pt-28 md:pt-16 ">
     {/* Left Section - Headings, Text, and Button */}
     <div className="w-full md:w-1/2 flex flex-col items-center md:items-start p-5 xl:pt-20 md:p-10 order-1 md:order-1">
       <div className="text-center md:text-left z-20 md:relative md:mb-0">
@@ -77,7 +77,7 @@ export default function Home() {
       </section>
       
 
-      <section className="h-auto w-screen mb-16  bg-[#F5FCFF] ">
+      <section className="h-auto w-full mb-16  bg-[#F5FCFF] ">
         {/* Heading and Paragraph  */}
         <div className="text-center md:text-left z-20  md:relative md:mb-0  ">
           
@@ -94,7 +94,7 @@ export default function Home() {
       {/* cards Section */}
       <DisplayCards />
 
-      <section className="h-screen w-screen bg-[#F5FCFF]  pt-32  md:px-32 ">
+      <section className="h-screen w-full bg-[#F5FCFF]  pt-32  md:px-32 ">
         <div className="  z-20  md:relative md:mb-0 md:px-10 items-center text-center">
           <p className=" md:pt-2 pb-2 md:pb-2 text-xs  md:text-xs font-medium uppercase   text-[#FF6868]">
             Special Dishes
@@ -107,7 +107,7 @@ export default function Home() {
         <DishesSlider />
       </section>
 
-      <section className="h-screen w-screen bg-[#F5FCFF]   flex flex-col md:flex-row px-6 mb-40 md:mb-0">
+      <section className="h-screen w-full bg-[#F5FCFF]   flex flex-col md:flex-row px-6 mb-40 md:mb-0">
         {/* Left Section - Image and Cards */}
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center relative xl:pt-0 md:-mt-12 order-first md:order-1">
           {/* Wrapper for Image */}
@@ -121,8 +121,8 @@ export default function Home() {
               className="h-80 w-72 md:h-96 md:w-80 -mt-8 object-contain relative z-10"
               src="/images/cheif.png"
               alt="Delicious food"
-              width={288} // 72 * 4
-              height={320} // 80 * 4
+              width={288} 
+              height={320} 
             />
             {/* Group 15 Image positioned beside */}
             <div className="relative h-24 w-40  -top-16 -right-48  md:-top-16 md:-right-52">
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
 
         {/* Right Section - Headings, Text, and Button */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start -mt-14 xl:pt-28 md:p-10 order-2 md:order-2">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start md:-mt-14 xl:pt-28 md:p-10 order-2 md:order-2">
           {/* Heading and Paragraph */}
 
           <p className=" md:pt-2 pb-2 md:pb-2 text-xs  md:text-xs font-medium uppercase   text-[#FF6868]">
@@ -162,9 +162,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#F5FCFF] h-screen w-screen flex flex-col md:flex-row px-6 md:px-36 pb-20 md:-mb-24  ">
+      <section className="bg-[#F5FCFF] h-screen w-full flex flex-col md:flex-row px-6 md:px-36 pb-20 md:-mb-24  ">
         {/* Left Section - Headings, Text */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start p-5 xl:pt-20  order-1 md:order-1 md:-mt-28">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start p-5 xl:pt-20  order-1 md:order-1 mt-10 md:-mt-28">
           <p className="md:pt-2 pb-2  text-xs md:text-xs font-medium uppercase text-[#FF6868]">
             Our Story & Services
           </p>

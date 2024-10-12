@@ -7,7 +7,7 @@ import MobileNav from "../MobileNav";
 
 const Header = () => {
   return (
-    <header className="px-4 xl:px-16 text-black flex items-center justify-between dark:bg-black ml-14 md:ml-16 pt-8 bg-[#F5FCFF]">
+    <header className="px-4 xl:px-40 text-black flex items-center justify-between dark:bg-black   pt-8 bg-[#F5FCFF]">
       {/* Logo */}
       <Link href="/" className="flex justify-center">
         <div className="flex items-center justify-center">
@@ -24,14 +24,14 @@ const Header = () => {
             className="h-6 w-14 mt-1"
             src="/images/oodi.png"
             alt=""
-            width={56} // 14 * 4 = 56px
-            height={24} // 6 * 4 = 24px
+            width={56} 
+            height={24}  
           />
         </div>
       </Link>
 
       {/* Desktop dev */}
-        <div className="hidden lg:flex items-center gap-8 ">
+        <div className="hidden lg:flex items-center  ">
       <Nav />
      
       <div className="flex items-center space-x-4">

@@ -53,16 +53,16 @@ const MobileNav = () => {
                 src="/images/Foodie.png"
                 alt="Logo"
                 className="h-5 w-5"
-                width={20} // 5 * 4 = 20px
-                height={20} // 5 * 4 = 20px
+                width={20} 
+                height={20} 
               />
             </div>
             <Image
               src="/images/oodi.png"
               alt=""
               className="h-6 w-14 mt-1"
-              width={56} // 14 * 4 = 56px
-              height={24} // 6 * 4 = 24px
+              width={56} 
+              height={24} 
             />
           </div>
         </Link>

@@ -11,25 +11,25 @@ const TestimonialSection = () => {
   src="/images/Maskgroup1.png"
   alt="Customer 1"
   className="w-12 h-12 rounded-full"
-  width={48}  // 12 * 4 = 48px
-  height={48}  // 12 * 4 = 48px
+  width={48}  
+  height={48}  
   style={{ marginLeft: '0px' }}
 />
 <Image
   src="/images/Maskgroup2.png"
   alt="Customer 2"
   className="w-12 h-12 rounded-full"
-  width={48}  // 12 * 4 = 48px
-  height={48}  // 12 * 4 = 48px
-  style={{ marginLeft: "-10px" }} // Overlapping second image
+  width={48}  
+  height={48}  
+  style={{ marginLeft: "-10px" }} 
 />
 <Image
   src="/images/Maskgroup3.png"
   alt="Customer 3"
   className="w-12 h-12 rounded-full"
-  width={48}  // 12 * 4 = 48px
-  height={48}  // 12 * 4 = 48px
-  style={{ marginLeft: "-10px" }} // Overlapping third image
+  width={48}  
+  height={48}
+  style={{ marginLeft: "-10px" }} 
 />
         </div>
 
