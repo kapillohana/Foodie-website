@@ -8,7 +8,7 @@ const TestimonialSection = () => {
         {/* Left Side - Overlapping Rounded Pictures */}
         <div className="flex justify-center md:justify-start mb-4 md:mb-0">
         <Image
-  src="./images/maskgroup1.png"
+  src="/images/maskgroup1.png"
   alt="Customer 1"
   className="w-12 h-12 rounded-full"
   width={48}  // 12 * 4 = 48px
@@ -16,7 +16,7 @@ const TestimonialSection = () => {
   style={{ marginLeft: '0px' }}
 />
 <Image
-  src="./images/maskgroup2.png"
+  src="/images/maskgroup2.png"
   alt="Customer 2"
   className="w-12 h-12 rounded-full"
   width={48}  // 12 * 4 = 48px
@@ -24,7 +24,7 @@ const TestimonialSection = () => {
   style={{ marginLeft: "-10px" }} // Overlapping second image
 />
 <Image
-  src="./images/maskgroup3.png"
+  src="/images/maskgroup3.png"
   alt="Customer 3"
   className="w-12 h-12 rounded-full"
   width={48}  // 12 * 4 = 48px

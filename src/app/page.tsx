@@ -50,7 +50,7 @@ export default function Home() {
         {/* Display Image */}
         <Image
           className="h-80 w-72 md:h-96 md:w-96 -mt-28 -md-mt-32  object-contain rounded-full relative z-10"
-          src="./images/displaypic.png"
+          src="/images/picture.webp"
           alt="Delicious food"
           width={288}
           height={320}
