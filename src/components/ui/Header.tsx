@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Nav from "../Nav";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -11,9 +12,21 @@ const Header = () => {
       <Link href="/" className="flex justify-center">
         <div className="flex items-center justify-center">
           <div className="bg-[#39DB4A] w-10 h-8 rounded-md flex items-center justify-center">
-            <img className="h-5 w-5" src="/images/Foodie.png" alt="Logo" />
+          <Image
+              className="h-5 w-5"
+              src="/images/Foodie.png"
+              alt="Logo"
+              width={20} // 5 * 4 = 20px
+              height={20} // 5 * 4 = 20px
+            />
           </div>
-          <img className="h-6 w-14 mt-1" src="/images/oodi.png" alt="" />
+          <Image
+            className="h-6 w-14 mt-1"
+            src="/images/oodi.png"
+            alt=""
+            width={56} // 14 * 4 = 56px
+            height={24} // 6 * 4 = 24px
+          />
         </div>
       </Link>
 

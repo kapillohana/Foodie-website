@@ -1,4 +1,5 @@
 import { FaStar } from 'react-icons/fa';
+import Image from 'next/image';
 
 const TestimonialSection = () => {
   return (
@@ -6,24 +7,30 @@ const TestimonialSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Left Side - Overlapping Rounded Pictures */}
         <div className="flex justify-center md:justify-start mb-4 md:mb-0">
-          <img
-            src="/images/maskGroup1.png"
-            alt="Customer 1"
-            className="w-12 h-12 rounded-full"
-            style={{ marginLeft: '0px' }}
-          />
-          <img
-            src="/images/maskGroup2.png"
-            alt="Customer 2"
-            className="w-12 h-12 rounded-full"
-            style={{ marginLeft: '-10px' }} // Overlapping second image
-          />
-          <img
-            src="/images/maskGroup3.png"
-            alt="Customer 3"
-            className="w-12 h-12 rounded-full"
-            style={{ marginLeft: '-10px' }} // Overlapping third image
-          />
+        <Image
+  src="/images/maskGroup1.png"
+  alt="Customer 1"
+  className="w-12 h-12 rounded-full"
+  width={48}  // 12 * 4 = 48px
+  height={48}  // 12 * 4 = 48px
+  style={{ marginLeft: '0px' }}
+/>
+<Image
+  src="/images/maskGroup2.png"
+  alt="Customer 2"
+  className="w-12 h-12 rounded-full"
+  width={48}  // 12 * 4 = 48px
+  height={48}  // 12 * 4 = 48px
+  style={{ marginLeft: "-10px" }} // Overlapping second image
+/>
+<Image
+  src="/images/maskGroup3.png"
+  alt="Customer 3"
+  className="w-12 h-12 rounded-full"
+  width={48}  // 12 * 4 = 48px
+  height={48}  // 12 * 4 = 48px
+  style={{ marginLeft: "-10px" }} // Overlapping third image
+/>
         </div>
 
         {/* Right Side - Customer Reviews */}

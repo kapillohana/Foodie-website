@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Socials from "./Socials";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -8,9 +9,21 @@ const Footer = () => {
         {/* Left Section - Logo, Text */}
         <div className="w-full flex flex-col items-center md:items-start md:w-1/4">
           <div className="bg-[#39DB4A] w-7 h-7 rounded-md flex items-center justify-center mb-2 mr-12 md-mr:0">
-            <img className="h-5 w-5" src="/images/Foodie.png" alt="Logo" />
+          <Image
+              src="/images/Foodie.png"
+              alt="Logo"
+              className="h-5 w-5"
+              width={20} // 5 * 4 = 20px
+              height={20} // 5 * 4 = 20px
+            />
           </div>
-          <img className="h-6 w-14 mb-4 -mt-8 ml-20 md:-mt-8 md:ml-7 mr-12  " src="/images/oodi.png" alt="Logo"  />
+          <Image
+            src="/images/oodi.png"
+            alt="Logo"
+            className="h-6 w-14 mb-4 -mt-8 ml-20 md:-mt-8 md:ml-7 mr-12"
+            width={56} // 14 * 4 = 56px
+            height={24} // 6 * 4 = 24px
+          />
           <p className="text-center md:text-left text-sm text-gray-600">
             Savor the artistry where every dish is a culinary masterpiece.
           </p>

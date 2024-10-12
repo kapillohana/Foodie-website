@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image"; // Ensure this line is included for the Image component
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"; // Ensure correct casing
 import { usePathname } from "next/navigation";
@@ -37,7 +38,7 @@ const links = [
 
 const MobileNav = () => {
   const pathname = usePathname();
-  
+
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
@@ -48,12 +49,24 @@ const MobileNav = () => {
         <Link href="/" className="flex justify-center">
           <div className="flex items-center justify-center mb-4">
             <div className="bg-[#39DB4A] w-10 h-8 rounded-md flex items-center justify-center">
-              <img className="h-5 w-5" src="/images/Foodie.png" alt="Logo" />
+              <Image
+                src="/images/Foodie.png"
+                alt="Logo"
+                className="h-5 w-5"
+                width={20} // 5 * 4 = 20px
+                height={20} // 5 * 4 = 20px
+              />
             </div>
-            <img className="h-6 w-14 mt-1" src="/images/oodi.png" alt="" />
+            <Image
+              src="/images/oodi.png"
+              alt=""
+              className="h-6 w-14 mt-1"
+              width={56} // 14 * 4 = 56px
+              height={24} // 6 * 4 = 24px
+            />
           </div>
         </Link>
-        
+
         {/* Navigation Links */}
         <nav className="flex flex-col items-center gap-4">
           {links.map((link, index) => {
@@ -73,7 +86,10 @@ const MobileNav = () => {
 
         {/* Socials Component */}
         <div className="flex justify-center">
-          <Socials containerStyles="flex gap-4" iconStyles="text-gray-600 hover:text-gray-900 transition-all" />
+          <Socials
+            containerStyles="flex gap-4"
+            iconStyles="text-gray-600 hover:text-gray-900 transition-all"
+          />
         </div>
       </SheetContent>
     </Sheet>
